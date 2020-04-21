@@ -1,0 +1,27 @@
+item {
+    id: 1
+    name: 'Knife'
+}
+
+item {
+    id: 2
+    name: 'Wrench'
+}
+item {
+    id: 3
+    name: 'Pliers'
+}
+
+item {
+    id: 4
+    name: 'Gun'
+}
+item {
+    id: 5
+    name: 'Hammer'
+}
+
+item {
+    id: 6
+    name: 'Scissors'
+}

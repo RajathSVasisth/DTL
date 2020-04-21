@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Airport Security</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="{{ url_for('logout') }}" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="{{ url_for('upload_image') }}" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Upload</a>
+      <a href="{{ url_for('logout') }}" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Input</h1>
+      <img src="{{ url_for('static', filename=Input)}}" style="width:100%;">Input Image</img>
+      <div class="w3-left-align w3-padding-large">
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:700px" id="work">
+    <div class="w3-padding-64">
+      <h2>Threats Detected</h2>
+      <h3><object data="{{ url_for('static', filename=File)}}" width="150px"></object></h3>
+      <h2>Threats Considered</h2>
+      <p>Knife</p>
+      <p>Gun</p>
+      <p>Pliers</p>
+      <p>Wrench</p>
+      <p>Hammer</p>
+      <p>Scissors</p>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Result</h1>
+      <img class="imageOutput" src="{{ url_for('static', filename=Output)}}" style="width:100%;">Resultant Image</img>
+      <div class="w3-left-align w3-padding-large">
+      </div>
+    </div>
+  </div>
+</div>
